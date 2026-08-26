@@ -1,0 +1,13 @@
+{% for student in students %}
+<tr>
+    <br>
+    <td><a href ="/students/{{student.id}}/">{{ student.name }}</a></td>
+    <br>
+    <td>{{ student.age }}</td>
+    <br>
+    <td>{{ student.roll_number }}</td>
+    <br>
+    <td>{{ student.department.dept_name }}</td>
+    <br>
+</tr>
+{% endfor %}
